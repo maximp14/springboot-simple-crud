@@ -34,6 +34,13 @@ public class Person {
     @Column(name = "phone")
     private String phone;
 
+    public Person(@NotBlank String name, @NotBlank String lastName, @NotBlank String address, @NotBlank String phone) {
+        this.name = name;
+        this.lastName = lastName;
+        this.address = address;
+        this.phone = phone;
+    }
+
     public Long getId() {
         return id;
     }
