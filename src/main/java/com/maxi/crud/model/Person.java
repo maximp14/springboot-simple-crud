@@ -34,7 +34,8 @@ public class Person {
     @Column(name = "phone")
     private String phone;
 
-    public Person(@NotBlank String name, @NotBlank String lastName, @NotBlank String address, @NotBlank String phone) {
+    public Person(Long id, @NotBlank String name, @NotBlank String lastName, @NotBlank String address, @NotBlank String phone) {
+        this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.address = address;
