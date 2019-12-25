@@ -6,8 +6,6 @@ import static com.maxi.crud.security.UserPermission.PERSON_WRITE;
 import com.google.common.collect.Sets;
 import java.util.Set;
 
-
-
 public enum UserRole {
   ADMIN(Sets.newHashSet(PERSON_READ, PERSON_WRITE)),
   GUEST(Sets.newHashSet());
